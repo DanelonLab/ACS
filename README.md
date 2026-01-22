@@ -2,7 +2,7 @@
 
 ## Description
 
-This JupyterLite notebook models the **probability of DNA co-encapsulation** in liposomes using Poisson statistics. It generates **Figures S5 and S6** from the manuscript entitled "Autocatalytic selection of gene functions in vitro".
+This JupyterLite notebook models the **probability of DNA co-encapsulation** in liposomes using Poisson statistics. It generates **Figures S5 and S6** from the manuscript entitled "Autocatalytic selection of gene functions in vitro". The notebook also includes a calculator that allows users to specify the input concentrations of two DNA species and directly compute the corresponding probabilities of co-encapsulation. 
 
 ---
 
@@ -53,16 +53,19 @@ Plots the probability of encapsulating **0, 1, 2, 3, or >3 DNA molecules** as a 
 
 ### **Figure S6**
 
-For competition experiments involving two DNA species at a **1:1 ratio**, the probability of both species coexisting within the same liposome is:
+For competition experiments involving two DNA species, the probability of both species coexisting within the same liposome is:
 
 \[
-P_{both species} = (1 - e^{-λ}) \times (1 - e^{-λ})
+P_{both species} = (1 - e^{-λ_A}) \times (1 - e^{-λ_B})
 \]
 
-This is plotted as a function of DNA concentration.
-
+This probability is plotted as a function of the total DNA concentration for the species ratios used in the manuscript (1:1 and 1:4).
 ---
+## Calculator
 
+In addition to generating Figures S5 and S6, this notebook includes a calculator that allows users to explore co-encapsulation probabilities under custom conditions.
+Users can specify the input DNA concentrations of two distinct species, A and B (C_A_pM and C_B_pM, respectively), and compute the probability that both species are co-encapsulated within the same liposome.
+---
 ## Usage
 
 1. **Launch** in JupyterLite or standard JupyterLab.
