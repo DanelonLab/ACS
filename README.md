@@ -2,7 +2,7 @@
 
 ## Description
 
-This JupyterLite notebook models the **probability of DNA co-encapsulation** in liposomes using Poisson statistics. It generates **Figures S5 and S6** from the manuscript entitled "Autocatalytic selection of gene functions in vitro".
+This JupyterLite notebook models the **probability of DNA co-encapsulation** in liposomes using Poisson statistics. It generates **Figures S5 and S6** from the manuscript entitled **"Autocatalytic selection of gene functions in synthetic cells"**. The notebook also provides a **calculator** that allows users to define concentrations for two DNA species to directly estimate co-encapsulation probabilities.
 
 ---
 
@@ -53,15 +53,21 @@ Plots the probability of encapsulating **0, 1, 2, 3, or >3 DNA molecules** as a 
 
 ### **Figure S6**
 
-For competition experiments involving two DNA species at a **1:1 ratio**, the probability of both species coexisting within the same liposome is:
+For competition experiments involving two DNA species (A and B), the probability that both species coexist within the same liposome is calculated as:
 
 \[
-P_{both species} = (1 - e^{-λ}) \times (1 - e^{-λ})
+P_{both species} = (1 - e^{-λ_A}) \times (1 - e^{-λ_B})
 \]
 
-This is plotted as a function of DNA concentration.
+This probability is plotted as a function of the total DNA concentration for different species ratios, including 1:1 and 1:4.
 
+To account for the fact that only a fraction of the encapsulated DNA is catalytically active, an additional calculation is performed assuming that 10% of the total DNA population is active. 
+The co-encapsulation probability is recalculated using the same Poisson framework. These results are shown as dashed curves.
 ---
+
+## Calculator: Co-Encapsulation Probability 
+In addition to generating Figures S5 and S6, this notebook includes an interactive calculator that allows users to explore co-encapsulation probabilities under custom conditions.
+Users can specify the input concentrations of the two DNA species (C_A_pM and C_B_pM), and compute the probability that both species are co-encapsulated within the same liposome.
 
 ## Usage
 
