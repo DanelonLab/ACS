@@ -63,6 +63,7 @@ This probability is plotted as a function of the total DNA concentration for dif
 
 To account for the fact that only a fraction of the encapsulated DNA is catalytically active, an additional calculation is performed assuming that 10% of the total DNA population is active. 
 The co-encapsulation probability is recalculated using the same Poisson framework. These results are shown as dashed curves.
+
 ---
 
 ## Calculator: Co-Encapsulation Probability 
