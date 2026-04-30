@@ -92,7 +92,7 @@ Users can specify the input concentrations of the two DNA species (C_A_pM and C_
 
 This code was developed for:
 
-**Autocatalytic selection of gene functions in vitro, 2025**
+**Autocatalytic selection of gene functions in synthetic cells, published in Communications Biology 2026**
 
 If used, please cite accordingly. For questions, contact:
 
